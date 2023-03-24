@@ -5,7 +5,7 @@ function scroll () {
 const y = window.scrollY;
 console.log(y)
 
-if (y > 120) {
+if (y > 20) {
     const menu = document.querySelector('.navbar__menu');
     menu.setAttribute('id', 'navbar__menu-scrolled');
 } else {
