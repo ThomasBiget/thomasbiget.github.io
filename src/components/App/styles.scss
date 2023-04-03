@@ -1,0 +1,20 @@
+@use './../../styles/vars';
+
+.app {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 2rem;
+  text-align: center;
+  border: 2px solid rgb(43, 42, 42);
+  border-radius: 15px;
+  background: linear-gradient(252deg, rgba(94,91,91,1) 0%, rgba(133,132,132,1) 10%, rgba(149,146,146,1) 100%);
+
+  &__title {
+    text-align: center;
+    font-size: 2rem;
+    color: vars.$primary;
+  }
+}

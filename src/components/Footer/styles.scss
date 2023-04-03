@@ -1,0 +1,93 @@
+@use './../../styles/vars';
+
+.footer {
+    height: 2rem;
+    background-color: vars.$secondary;
+    display: flex;
+    justify-content: space-between;
+    width: 100wh;
+    border: 1px solid white;
+    border-bottom: 1px solid rgb(80, 79, 79);
+    border-left: 1px solid rgb(80, 79, 79);
+    border-right: 1px solid rgb(80, 79, 79);
+    padding: 2px;
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        gap: 0.5rem;
+        font-size: 0.8rem;
+        font-weight: bold;
+        
+        &-start {
+            display: flex;
+            gap: 3px;
+            padding: 0px 3px 0 3px;
+            box-shadow: 1px 1px 2px rgb(0, 0, 0);
+            border-top: 1px solid rgb(255, 255, 255);
+            border-left: 1px solid rgb(255, 255, 255);
+
+            p {
+                padding-top: 6px;
+            }
+        }
+
+        &-string {
+            box-shadow: 1px 1px 2px rgb(70, 69, 69);
+            background-color: white;
+            width: 2px;
+            border-radius: 30px;
+            margin: 2px auto;
+        }
+
+        &-folder {
+            display: flex;
+            justify-content: space-around;
+            border-top: 1px solid rgb(46, 45, 45);
+            border-left: 1px solid rgb(56, 55, 55);
+            border-bottom: 1px solid rgb(255, 255, 255);
+            border-right: 1px solid rgb(255, 255, 255);
+            background-color: rgb(223, 219, 219);
+            padding: 3px;
+
+            p {
+                padding-top: 4px;
+            }
+
+
+        }
+    }
+
+
+    &__hour {
+
+        display: flex;
+        justify-content: space-between;
+        gap: 0.2rem;
+
+        &-string {
+            box-shadow: 1px 1px 2px rgb(70, 69, 69);
+            background-color: white;
+            width: 2px;
+            border-radius: 30px;
+            margin: 2px auto;
+        }
+
+        &-hour {
+            display: flex;
+            gap: 2px;
+            border-top: 1px solid rgb(150, 149, 149);
+            border-left: 1px solid rgb(150, 149, 149);
+            border-bottom: 1px solid rgb(255, 255, 255);
+            border-right: 1px solid rgb(255, 255, 255);
+
+            p{
+                font-size: 0.8rem;
+                padding-top: 5px;
+                padding-left: 3px;
+            }
+
+        }
+        
+    }
+}
