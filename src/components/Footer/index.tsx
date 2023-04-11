@@ -1,6 +1,10 @@
 import './styles.scss';
 
-function Footer() {
+interface FooterProps {
+  hour: string
+}
+
+function Footer({ hour }: FooterProps) {
   return (
     <footer className="footer">
       <div className="footer__nav">
@@ -19,7 +23,7 @@ function Footer() {
         <div className="footer__hour-hour">
           <img src="../../public/img/time_and_date-2.png" alt="logo de windows 98" />
           <img src="../../public/img/loudspeaker_rays-0.png" alt="logo de windows 98" />
-          <p>9:15 PM</p>
+          <p>{hour}</p>
         </div>
       </div>
     </footer>

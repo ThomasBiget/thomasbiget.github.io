@@ -1,0 +1,36 @@
+@use './../../styles/vars';
+
+.main__window {
+    border: 2px solid rgb(221, 223, 221);
+    background-color: white;
+    margin: 3rem 3rem 5rem 0;
+    max-width: 600px;
+    height: 400px;
+    box-shadow: 2px 2px 3px rgb(0, 0, 0);
+
+    h1 {
+        background-color: vars.$menu;
+        padding: 0.2rem;
+        border: 2px solid vars.$secondary;
+        text-align: left;
+        font-size: 0.8rem;
+        font-weight: bold;
+        color: white;
+    }
+
+    &-text {
+        background-color: white;
+        color: rgb(26, 25, 25);
+        font-size: 0.9rem;
+        margin: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .main__window {
+        margin: 1rem auto;
+        padding: 0;
+        height: 400px;
+  }
+}
