@@ -11,7 +11,7 @@ const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 
 // On injecte notre application dans le DOM
 root.render(
-  <BrowserRouter basename="thomasbiget.github.io">
+  <BrowserRouter>
     <App />
   </BrowserRouter>,
 );
