@@ -26,6 +26,27 @@
     }
 }
 
+.technologies {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1rem;
+    padding: 0.5rem;
+    list-style-type: none;
+    font-size: 1rem;
+    max-width: 800px;
+}
+.technos__li {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.logos {
+    max-width: 25px;
+    max-height: 25px;
+}
+
+
 @media screen and (max-width: 800px) {
 
     .main__window {
