@@ -5,7 +5,7 @@ import computerFooter from '../../img/computer_explorer_cool-0.png';
 import time from '../../img/time_and_date-2.png';
 import sound from '../../img/loudspeaker_rays-0.png';
 
-function Footer() {
+function Footer({ iconTitle }) {
   const hour: string = dayjs().format('HH:mm');
 
   return (
@@ -18,7 +18,7 @@ function Footer() {
         <div className="footer__nav-string" />
         <div className="footer__nav-folder">
           <img src={computerFooter} alt="logo ordinateur windows 98" />
-          <p>Windows</p>
+          <p>{iconTitle}</p>
         </div>
       </div>
       <div className="footer__hour">
