@@ -98,3 +98,17 @@
         
     }
 }
+
+@media screen and (max-width: 800px) {
+    .footer__hour-hour {
+        p{
+            font-size: 0.8rem;
+            padding-top: 0.4rem;
+        }
+
+        img {
+            display: none;
+        }
+
+    }
+  }
