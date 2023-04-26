@@ -1,10 +1,16 @@
+import { Link } from 'react-router-dom';
 import './styles.scss';
 import linkedin from '../../img/logos/linkedin.png';
 
 function Contact() {
   return (
     <div className="main__window">
-      <h1>Thomas Biget - Développeur Fullstack - Contact</h1>
+      <h1>
+        Thomas Biget - Développeur Fullstack - Contact
+        <Link to="/">
+          <span>X</span>
+        </Link>
+      </h1>
       <div className="main__window-text">
         <p>
           <img className="logos" src={linkedin} alt="" />

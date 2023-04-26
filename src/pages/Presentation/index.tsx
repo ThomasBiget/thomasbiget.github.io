@@ -1,9 +1,15 @@
+import { Link } from 'react-router-dom';
 import './styles.scss';
 
 function Presentation() {
   return (
     <div className="main__window">
-      <h1>Thomas Biget - Développeur Fullstack - Présentation</h1>
+      <h1>
+        Thomas Biget - Développeur Fullstack - Présentation
+        <Link to="/">
+          <span>X</span>
+        </Link>
+      </h1>
       <div className="main__window-text">
         <p>
           Bienvenue sur mon portfolio ! Je m'appelle Thomas,

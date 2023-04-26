@@ -17,6 +17,17 @@
         font-weight: bold;
         color: white;
     }
+    
+    span {
+        color:rgb(0, 0, 0);
+        background-color: #C0C0C0;
+        border-top: 2px solid white;
+        border-left: 2px solid white;
+        border-bottom: 2px solid #404040;
+        border-right: 2px solid #404040;
+        margin: 2px 1px 2px 4px;
+        padding: 0 4px;
+    }
 
     &-text {
         background-color: white;

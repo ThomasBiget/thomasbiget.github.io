@@ -1,7 +1,7 @@
 import {
   Link, Route, Routes,
 } from 'react-router-dom';
-
+import { MouseEvent } from 'react';
 import './styles.scss';
 import Presentation from '../../pages/Presentation';
 import Projects from '../../pages/Projects';
@@ -12,11 +12,16 @@ import directory from '../../img/directory_closed-4.png';
 import application from '../../img/appwizard-5.png';
 import contact from '../../img/outlook_express-4.png';
 
-function Window({ setIconTitle }) {
+interface WindowsProps {
+  setIconTitle : (iconName: string) => void;
+}
+
+function Window({ setIconTitle }: WindowsProps) {
+  // On réagit au click sur les icon afin de récupérer le titre
+  // et le transmettre au footer (en remontant dans App)
   const handleClickIcon = (e: any) => {
-    const iconName = e.target.title;
+    const iconName: string = e.target.title;
     setIconTitle(iconName);
-    console.log(iconName);
   };
 
   return (
