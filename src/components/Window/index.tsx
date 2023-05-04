@@ -1,7 +1,6 @@
 import {
   Link, Route, Routes,
 } from 'react-router-dom';
-import { MouseEvent } from 'react';
 import './styles.scss';
 import Presentation from '../../pages/Presentation';
 import Projects from '../../pages/Projects';

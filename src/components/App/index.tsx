@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="app">
       <Window setIconTitle={setIconTitle} />
-      <Footer iconTitle={iconTitle} />
+      <Footer iconTitle={iconTitle} setIconTitle={setIconTitle} />
     </div>
   );
 }
