@@ -6,10 +6,12 @@ import Presentation from '../../pages/Presentation';
 import Projects from '../../pages/Projects';
 import Technologies from '../../pages/Technologies';
 import Contact from '../../pages/Contact';
+import Calculatrice from '../../pages/Calculatrice';
 import computer from '../../img/computer_explorer_cool-0.png';
 import directory from '../../img/directory_closed-4.png';
 import application from '../../img/appwizard-5.png';
 import contact from '../../img/outlook_express-4.png';
+import calculator from '../../img/calculator.png';
 
 interface WindowsProps {
   setIconTitle : (iconName: string) => void;
@@ -50,6 +52,12 @@ function Window({ setIconTitle }: WindowsProps) {
             <p title="Contact">Contact</p>
           </Link>
         </div>
+        <div className="main__folders-item">
+          <Link to="/calculate" state="Calculate" onClick={handleClickIcon}>
+            <img src={calculator} alt="logo calculatrice windows 98" title="Calculatrice" />
+            <p title="Contact">Calculatrice</p>
+          </Link>
+        </div>
       </div>
       <Routes>
         <Route
@@ -71,6 +79,10 @@ function Window({ setIconTitle }: WindowsProps) {
         <Route
           path="/contact"
           element={<Contact />}
+        />
+        <Route
+          path="/calculate"
+          element={<Calculatrice />}
         />
       </Routes>
     </main>

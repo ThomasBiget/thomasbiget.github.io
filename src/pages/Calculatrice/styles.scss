@@ -1,0 +1,96 @@
+@use '../../styles/vars';
+
+.main__calc {
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    border-bottom: 2px solid #404040;
+    border-right: 2px solid #404040;
+    background-color: #C0C0C0;
+    margin: 3rem 3rem 5rem 0;
+    max-width: 600px;
+    height: 350px;
+    overflow-y: auto;
+
+    h1 {
+        display: flex;
+        justify-content: space-between;
+        background-color: vars.$menu;
+        padding: 0.2rem;
+        border: 2px solid vars.$secondary;
+        text-align: left;
+        font-size: 0.8rem;
+        font-weight: bold;
+        color: white;
+    }
+
+    span {
+        color:rgb(0, 0, 0);
+        background-color: #C0C0C0;
+        border-top: 2px solid white;
+        border-left: 2px solid white;
+        border-bottom: 2px solid #404040;
+        border-right: 2px solid #404040;
+        margin: 2px 1px 2px 4px;
+        padding: 0 4px;
+    }
+
+    &-btn {
+        &--screen {
+            background-color: white;
+            border-bottom: 2px solid white;
+            border-right: 2px solid white;
+            border-top: 2px solid #404040;
+            border-left: 2px solid #404040;
+            color: black;
+            margin: 0.5rem 1rem;
+            padding: 0.2rem 0;
+            text-align: end;
+        }
+        &--erase {
+            border-top: 2px solid white;
+            border-left: 2px solid white;
+            border-bottom: 2px solid #404040;
+            border-right: 2px solid #404040;
+            color: red;
+            margin: 0.5rem 1rem;
+            padding: 0.3rem 0;
+        }
+        &--pad {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 0.5rem 1rem;
+            gap: 2px;
+
+            button {
+                border-top: 2px solid white;
+                border-left: 2px solid white;
+                border-bottom: 2px solid #404040;
+                border-right: 2px solid #404040;
+                background-color: #C0C0C0;
+                padding: 0.6rem 1rem;
+                width: 2.8rem;
+            }
+            &-red {
+                color: red;
+            }
+            &-blue {
+                color: blue;
+            }
+
+        }
+    }
+}
+
+.calc_width {
+    max-width: 250px;
+}
+@media screen and (max-width: 800px) {
+
+    .main__calc {
+        margin: 1rem auto;
+        padding: 0;
+        height: 350px;
+        max-width: 300px;
+  }
+}
